@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 # Create your models here.
-
+'''
 class Author(models.Model)
 	name = models.CharField(max_length=50)
 	age = models.IntegerField()
@@ -19,3 +19,4 @@ class Blog(models.Model):
 
 	def __unicode__(self):
 		return self.title
+'''

@@ -1,13 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect, JsonResponse, FileResponse
-from django.template import loader
-from .models import Blog
-
+#from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect, JsonResponse, FileResponse
+#from django.template import loader
+#from .models import Blog
+from django.http import HttpResponse
 # Create your views here.
 
 def hello(request):
 	return HttpResponse('<html>hello world</html>')
-
+'''
 def showBlog(request, blogId):
 	t = loader.get_template('blog.html')
 	blog = Blog.objects.get(id = blogId)
@@ -21,3 +21,4 @@ def showBlogList(request):
 	context = {'blogs': blogs}
 	html = t.render(context)
 	return HttpResponse(html)
+'''
