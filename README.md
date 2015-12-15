@@ -8,4 +8,5 @@ add apps: python manage.py startapp appName
 
 and then add app in settings.py
 
-
+python version: 2.7
+django version: 1.6
