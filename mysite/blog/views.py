@@ -7,12 +7,7 @@ from django import template
 # Create your views here.
 
 def hello(request):
-#	fp = open('/home/michael/workspace/Django/mysite/blog/blog.html')
-#	t = template.Template(fp.read())
-#	fp.close()
-#	html = t.render()
 	return render(request, 'index.html')
-	#return HttpResponse('<html>hello world</html>')
 '''
 def showBlog(request, blogId):
 	t = loader.get_template('blog.html')
